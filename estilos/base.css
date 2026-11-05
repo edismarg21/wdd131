@@ -1,0 +1,327 @@
+/* ===== RESET GERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff; /* ✅ FUNDO BRANCO DA PÁGINA */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background-color: #16537e; /* ✅ SÓ O CABEÇALHO É AZUL */
+    color: white;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+#titulo-curso {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+/* ===== MENU DE NAVEGAÇÃO ===== */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333333; /* ✅ FAIXA ESCURA */
+    padding: 0.6rem;
+    margin: 0 -1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #16537e;
+    border-radius: 4px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 2 colunas iguais */
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;  /* ocupa toda a largura, em cima dos cartões */
+    text-align: center;
+    color: #2c5282;
+    margin-bottom: 1rem;
+}
+
+
+/* ===== 2 COLUNAS LADO A LADO ===== */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff; /* ✅ CARD BRANCO */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #16537e; /* ✅ TÍTULO DO CARD AZUL */
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ===== CONTEÚDO DENTRO DO CARD ===== */
+.conteudo {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #ffffff; /* ✅ CONTEÚDO DO CARD TAMBÉM BRANCO */
+}
+
+.texto {
+    flex: 2;
+    background-color: transparent;
+}
+
+.texto p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.texto h3 {
+    font-size: 0.95rem;
+    margin: 1rem 0 0.3rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.foto {
+    flex: 1;
+    background-color: transparent;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== LISTA DE RECURSOS ===== */
+.card ul {
+    padding: 1.5rem 2rem;
+    background-color: #ffffff; /* ✅ LISTA BRANCA */
+    margin: 0;
+}
+
+.card li {
+    margin: 0.4rem 0;
+    color: #333;
+}
+
+.card a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #16537e; /* ✅ SÓ O RODAPÉ É AZUL */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+footer p:last-child {
+    font-size: 0.8rem;
+    color: #ffff66;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #16537e;
+    border-radius: 4px;
+}
+
+/* === Conteúdo Principal === */
+main {
+    padding: 1.5rem 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* === 2 colunas iguais === */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #16537e;
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* === Card 1: Texto + Imagem LADO A LADO === */
+.sobre-conteudo {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sobre-texto {
+    flex: 3;
+}
+
+.sobre-texto p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.sobre-texto h3 {
+    font-size: 0.95rem;
+    margin: 1rem 0 0.3rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.sobre-imagem {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === Card 2: Lista de recursos === */
+.card ul {
+    padding: 1.2rem 2rem;
+}
+
+.card li {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+}
+
+.card a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* === Rodapé — faixa azul embaixo === */
+footer {
+    background-color: #16537e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+footer p:last-child {
+    font-size: 0.8rem;
+    color: #ffff66;
+}
+/* Centraliza "Minha Cidade" e o texto abaixo */
+.sobre-texto h3 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.sobre-texto h3 + p {
+    text-align: center;
+}
+/* As duas caixas lado a lado */
+.cards-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas IGUAIS ✅ */
+    gap: 1.5rem; /* Espaço entre elas */
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #16537e;
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Lista de recursos */
+.card ul {
+    padding: 1.5rem 2rem;
+    margin: 0;
+}
+
+.card li {
+    margin: 0.5rem 0;
+}
+
+.card a {
+    color: #0066cc;
+    text-decoration: underline;
+}
