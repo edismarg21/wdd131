@@ -1,0 +1,24 @@
+#menu {
+    display: none;
+}
+
+.navigation {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.navigation a {
+    border: none;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+ }
