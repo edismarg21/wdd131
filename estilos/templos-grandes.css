@@ -3,7 +3,7 @@
     display: none;
 }
 
- .navigation {
+nav.navigation {
     display: flex;
     justify-content: space-around;
 }
