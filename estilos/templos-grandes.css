@@ -3,9 +3,11 @@
     display: none;
 }
 
-.navigation {
-    display: block;
+ .navigation {
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .navigation ul {
     display: flex;
