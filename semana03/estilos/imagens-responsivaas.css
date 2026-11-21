@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+h1 {
+    text-align: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 2rem;
+}
+.principal {
+    width: 100%;
+    height: auto;
+    display: block;
+}
