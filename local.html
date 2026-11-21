@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil — Terra da Luz</title>
+    <meta name="description" content="Conheça o Brasil: clima, geografia e belezas naturais">
+    <meta name="author" content="Seu Nome">
+    
+    <!-- Vinculamos o CSS primeiro -->
+    <link rel="stylesheet" href="estilos/local.css">
+    
+    <!-- O atributo defer faz o JS carregar DEPOIS do HTML estar pronto -->
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🇧🇷 Brasil</h1>
+        <p>O maior país da América do Sul</p>
+    </header>
+
+    <main>
+        <!-- Imagem responsiva — usa srcset/picture -->
+        <figure class="hero">
+            <picture>
+            <source srcset="imagem-brasil/brasil-grande.webp" media="(min-width: 768px)">
+             <source srcset="imagem-brasil/brasil-media.webp" media="(min-width: 400px)">
+            <img src="imagem-brasil/brasil-pequena.webp" alt="Paisagem do Brasil" width="800" height="400">
+            </picture>
+
+            <figcaption>Paisagem natural — Brasil</figcaption>
+        </figure>
+
+        <section class="intro">
+            <h2>Conheça o Brasil</h2>
+            <p>O Brasil é o quinto maior país do mundo, com uma vasta floresta amazônica, praias deslumbrantes e uma cultura vibrante e acolhedora.</p>
+        </section>
+
+        <section class="clima">
+            <h2>Clima <span class="icone-clima">⛅</span></h2>
+            <ul>
+                <li>Temperatura: <span id="temperatura">25</span>°C</li>
+                <li>Velocidade do vento: <span id="vento">10</span> km/h</li>
+                <li>Sensação térmica: <span id="sensacao">—</span></li>
+            </ul>
+        </section>
+
+        <section class="dados">
+            <h2>Informações</h2>
+            <p>Capital: Brasília | População: ~215 milhões | Idioma: Português</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Página do País | Última modificação: <span id="data-modificacao"></span></p>
+    </footer>
+
+</body>
+</html>
