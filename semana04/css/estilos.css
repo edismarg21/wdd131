@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse; /* Junta as bordas */
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #2c5aa0;
+  color: white;
+}
+
+/* Listras de zebra: linhas ímpares com fundo diferente */
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e6f0fa;
+}
