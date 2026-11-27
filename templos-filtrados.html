@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templos Filtros</title>
+    <title>Àlbum de Templos</title>
     <link rel="stylesheet" href="semana04/css/templos-filtrados.css">
-
+    <meta name="description" content="Explore um álbum de templos da Igreja de Jessus Cristo dos Santos dos últimos Dias, conheça suas localizações, datas de consagração e áreas">
+    <meta name="autor" content="Edismar Guzmán">
    
 </head>
 <body>
 
     <header>
-        <h1>Templos da Igreja de Jesus Cristo dos Santos dos Últimos Dias</h1>
-        <nav class="filtros">
-            <button id="todos">Todos</button>
-            <button id="antigos">Antigos</button>
-            <button id="novos">Novos</button>
-            <button id="grandes">Grandes</button>
-            <button id="pequenos">Pequenos</button>
-        </nav>
-    </header>
+        <h2>Álbum do Templo</h2>
 
-    <main class="grid" id="temples-grid"></main>
+        <nav class="filtros">
+            <a id="todos" href="#temples-grid">Página Inicial</a>
+            <a id="antigos" href="#temples-grid">Antigo</a>
+            <a id="novos" href="#temples-grid">Novo</a>
+            <a id="grandes" href="#temples-grid">Grande</a>
+            <a id="pequenos" href="#temples-grid">Pequeno</a>
+    </nav>
+</header>
+
+    <main>
+      <h1>Templos da Igreja de Jesus Cristo dos Santos dos últimos Dias</h1>
+    
+      <div class="grid" id="temples-grid"></div>
+    </main>
 
     <footer>
         <p>&copy; <span id="ano"></span> ✨ Edismar Guzmán ✨ Todos os direitos reservados.</p>
         <p>Última modificação: <span id="ultima-mod"></span></p>
     </footer>
 
- <script src="semana04/js/templos-filtrados.js"></script>
+ <script src="semana04/js/templos-filtrados.js" defer></script>
 
 </body>
 </html>

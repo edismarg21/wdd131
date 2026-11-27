@@ -70,3 +70,22 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+main h1 {
+
+    text-align: center;
+    margin: 2rem 0;
+
+}
+
+.filtros a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.filtros a:hover {
+    color: rgb(231, 231, 3);
+}
