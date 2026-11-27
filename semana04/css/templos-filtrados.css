@@ -17,7 +17,6 @@ header {
 }
 
 .filtros {
-   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,6 +87,13 @@ main h1 {
 
 .filtros a:hover {
     color: rgb(231, 231, 3);
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    
 }
 @media (max-width: 600px) {
     .grid {
